@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Centro Farmaceutico"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="#1355C6"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/farmacia"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/txtNombreP"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:hint="Buscar producto"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageButton
+            android:id="@+id/btnBuscarP"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search24dp"
+            android:background="@android:color/white"
+            android:onClick="onclickP"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listaIdP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
